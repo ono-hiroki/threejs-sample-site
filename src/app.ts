@@ -1,1 +1,8 @@
-console.log("app.ts loaded")
+import renderingSystem from "./renderingSystem";
+
+const loop = () => {
+    renderingSystem.exec();
+    requestAnimationFrame(loop);
+}
+
+loop();
