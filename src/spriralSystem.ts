@@ -1,6 +1,6 @@
 import { ITEMS } from "./define"
 import renderingSystem from "./renderingSystem"
-import SpiralItem from "./SpiralItem"
+import SpiralItem from "./spiralItem";
 
 class SpiralSystem {
     items!: SpiralItem[]
