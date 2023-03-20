@@ -15,7 +15,7 @@ class SpiralSystem {
         const itemRot = SPIRAL_OFFSET_ANGLE_RAD * i
         const x = Math.sin(itemRot)
         const z = Math.cos(itemRot)
-        const y = SPIRAL_OFFSET_Y *  i
+        const y = SPIRAL_OFFSET_Y * i
 
         position.set(x, y, z)
     }
@@ -24,6 +24,7 @@ class SpiralSystem {
         this.items.forEach((v, i) => {
             this.calcItemPosition(i, v.object.position)
             if (v.isPlane) v.ajustPlaneShape()
+            else v.rotate()
         })
     }
 }
