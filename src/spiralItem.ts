@@ -14,12 +14,6 @@ export default class SpiralItem {
         z: Math.random() * .01 + .01,
     }
 
-    //  rotate() {
-    //     this.object.rotation.x += this.rotationSpeed.x
-    //     this.object.rotation.y += this.rotationSpeed.y
-    //     this.object.rotation.z += this.rotationSpeed.z
-    // }
-    // rotate関数を定義
     rotate() {
         this.object.rotation.x += this.rotationSpeed.x
         this.object.rotation.y += this.rotationSpeed.y
@@ -53,8 +47,8 @@ export default class SpiralItem {
         this.isPlane = true
     }
 
-    ajustPlaneShape() {
-        const itemRot = SPIRAL_OFFSET_ANGLE_RAD * this.i
+    ajustPlaneShape(spiralRot: number) {
+        const itemRot = SPIRAL_OFFSET_ANGLE_RAD * this.i + spiralRot
         this.object.rotation.y = itemRot
 
         const halfOfPlaneWidth = Math.tan(SPIRAL_OFFSET_ANGLE_RAD / 2)
