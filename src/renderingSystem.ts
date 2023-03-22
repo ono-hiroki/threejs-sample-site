@@ -1,4 +1,4 @@
-import { BoxGeometry, DirectionalLight, GridHelper, Mesh, MeshStandardMaterial, PerspectiveCamera, Scene, WebGLRenderer } from "three"
+import { DirectionalLight, GridHelper, PerspectiveCamera, Scene, WebGLRenderer } from "three"
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
 class RenderingSystem {
