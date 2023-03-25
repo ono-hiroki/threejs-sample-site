@@ -3,7 +3,6 @@ import { load } from "./meshLoader";
 import renderingSystem from "./renderingSystem";
 import spiralSystem from "./spriralSystem";
 
-
 Promise
     .all(MODELS.map(v => load(v)))
     .then(() => {
