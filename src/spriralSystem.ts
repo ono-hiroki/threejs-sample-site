@@ -78,7 +78,7 @@ class SpiralSystem {
         return intersected[0]
     }
 
-    init() {
+    init() { // init
         this.items = ITEMS.map((v, i) => {
             return new SpiralItem(v, i, renderingSystem.scene)
         })

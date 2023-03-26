@@ -4,7 +4,7 @@ const gltfLoader = new GLTFLoader
 
 export const loadedmeshes = {} as { [key: string]: Group }
 
-export const load = async (file: string) => {
+export const load = async (file: string) => { // file: "model.gltf"
     const gltf = await gltfLoader.loadAsync(`/mesh/${file}`)
     loadedmeshes[file] = gltf.scene
 }

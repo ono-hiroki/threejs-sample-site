@@ -12,7 +12,7 @@ export const MODELS = ["dog.glb", "rabit.glb", "rion.glb"]
 export const ITEMS = Array(NUM_TOTAL_ITEM).fill(0)
     .map((v, i) => {
         if (i < 3) {
-            return { title: `DummyTitle${i}`, model: MODELS[i] }
+            return {title: `DummyTitle${i}`, model: MODELS[i]}
         }
 
         const j = i.toString().padStart(2, "2")
@@ -22,3 +22,5 @@ export const ITEMS = Array(NUM_TOTAL_ITEM).fill(0)
             youtubeId: "BFNekjEgvuk",
         }
     })
+
+console.log(ITEMS)
